@@ -1,0 +1,42 @@
+{
+  "seo": {
+    "title": "케어파트너스 - 병원 및 병실 관리",
+    "description": "케어파트너스 | 간병인 협회용 ERP",
+    "summary": "ERP"
+  },
+  "buttons": {
+    "add": {
+      "title": "새 병실 추가하기"
+    },
+    "modify": {
+      "title": "수정"
+    },
+    "delete": {
+      "title": "삭제"
+    }
+  },
+  "filter": {
+    "status": {
+      "title": "상태"
+    },
+    "room-type": {
+      "title": "병실구분"
+    },
+    "type": {
+      "title": "간병비 기준"
+    }
+  },
+  "list": {
+    "columns": ["이름", "정원", "상태", "간병비 기준", "병실유형"]
+  },
+  "modal": {
+    "create": {
+      "title": "새 병실 추가하기",
+      "confirm": "추가하기"
+    },
+    "modify": {
+      "title": "병실 수정하기",
+      "confirm": "수정하기"
+    }
+  }
+}

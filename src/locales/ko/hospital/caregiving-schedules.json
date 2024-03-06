@@ -1,0 +1,15 @@
+{
+  "seo": {
+    "title": "케어파트너스 - 근무표 관리",
+    "description": "케어파트너스 | 간병인 협회용 ERP",
+    "summary": "ERP"
+  },
+  "filter": {
+    "agency": {
+      "title": "협회"
+    },
+    "year-month": {
+      "title": "년/월"
+    }
+  }
+}

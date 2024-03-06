@@ -1,0 +1,31 @@
+{
+  "seo": {
+    "title": "케어파트너스 - 청구",
+    "description": "케어파트너스 | 간병인 협회용 ERP",
+    "summary": "ERP"
+  },
+  "buttons": {
+    "modify": {
+      "title": "수정"
+    },
+    "confirm": {
+      "title": "입금확인"
+    }
+  },
+  "filter": {
+    "status": {
+      "title": "청구상태"
+    },
+    "year-month": {
+      "title": "년/월"
+    }
+  },
+  "list": {
+    "columns": ["청구기간", "병원", "청구상태", "청구기간"]
+  },
+  "modal": {
+    "request-payment-detail": {
+      "title": "청구서 상세"
+    }
+  }
+}

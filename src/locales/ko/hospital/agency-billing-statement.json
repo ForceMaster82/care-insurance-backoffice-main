@@ -1,0 +1,23 @@
+{
+  "seo": {
+    "title": "케어파트너스 - 정산",
+    "description": "케어파트너스 | 간병인 협회용 ERP",
+    "summary": "ERP"
+  },
+  "buttons": {
+    "detail": {
+      "title": "상세"
+    }
+  },
+  "filter": {
+    "year-month": {
+      "title": "년/월"
+    },
+    "status": {
+      "title": "정산상태"
+    }
+  },
+  "list": {
+    "columns": ["정산기간", "병원", "정산상태"]
+  }
+}

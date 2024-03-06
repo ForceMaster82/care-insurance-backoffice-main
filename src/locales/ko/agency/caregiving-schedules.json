@@ -1,0 +1,48 @@
+{
+  "seo": {
+    "title": "케어파트너스 - 근무표 관리",
+    "description": "케어파트너스 | 간병인 협회용 ERP",
+    "summary": "ERP"
+  },
+  "buttons": {
+    "request": {
+      "title": "청구하기"
+    }
+  },
+  "filter": {
+    "hospital": {
+      "title": "병원"
+    },
+    "year-month": {
+      "title": "년/월"
+    }
+  },
+  "modal": {
+    "remark": {
+      "title": "특이사항"
+    },
+    "request-payment": {
+      "title": "청구하기"
+    },
+    "create-caregiving": {
+      "title": "간병 추가하기",
+      "confirm": "추가하기"
+    }
+  },
+  "nationality": {
+    "KOR": "대한민국",
+    "CHN": "중국",
+    "RUS": "러시아",
+    "ETC": "기타"
+  },
+  "availableRooms": {
+    "NORMAL": "일반병실",
+    "SEMI_CRITICAL": "준증환자실",
+    "CRITICAL": "중환자실",
+    "RESTRICTED": "격리/폐쇄병실"
+  },
+  "availableSkills": {
+    "SUCTION": "석션",
+    "FEEDING": "피딩"
+  }
+}

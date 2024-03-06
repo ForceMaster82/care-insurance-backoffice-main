@@ -1,0 +1,82 @@
+{
+  "seo": {
+    "title": "케어파트너스 - 간병인 관리",
+    "description": "케어파트너스 | 간병인 협회용 ERP",
+    "summary": "ERP"
+  },
+  "buttons": {
+    "add": {
+      "title": "새 간병인 추가하기"
+    },
+    "send-sms": {
+      "title": "SMS 발송"
+    },
+    "download-template": {
+      "title": "가져오기 양식 다운로드"
+    },
+    "import": {
+      "title": "간병인 목록 가져오기"
+    },
+    "modify": {
+      "title": "수정"
+    },
+    "delete": {
+      "title": "삭제"
+    },
+    "attachment-request": {
+      "title": "첨부파일 등록 요청"
+    }
+  },
+  "filter": {
+    "status": {
+      "title": "상태"
+    },
+    "sex": {
+      "title": "성별"
+    },
+    "available-room": {
+      "title": "근무가능병실"
+    },
+    "skills": {
+      "title": "보유기술"
+    }
+  },
+  "list": {
+    "columns": [
+      "이름",
+      "국적 (비자)",
+      "주민(외국인)등록번호",
+      "휴대폰번호",
+      "계좌번호",
+      "상태",
+      "보험가입상태",
+      "보험해지상태"
+    ]
+  },
+  "modal": {
+    "create": {
+      "title": "간병인 추가하기",
+      "confirm": "추가하기"
+    },
+    "modify": {
+      "title": "간병인 수정하기",
+      "confirm": "수정하기"
+    }
+  },
+  "nationality": {
+    "KOR": "대한민국",
+    "CHN": "중국",
+    "RUS": "러시아",
+    "ETC": "기타"
+  },
+  "availableRooms": {
+    "NORMAL": "일반병실",
+    "SEMI_CRITICAL": "준증환자실",
+    "CRITICAL": "중환자실",
+    "RESTRICTED": "격리/폐쇄병실"
+  },
+  "availableSkills": {
+    "SUCTION": "석션",
+    "FEEDING": "피딩"
+  }
+}

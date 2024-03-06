@@ -1,0 +1,26 @@
+{
+  "seo": {
+    "title": "케어파트너스 - 병원 및 병실 관리",
+    "description": "케어파트너스 | 간병인 협회용 ERP",
+    "summary": "ERP"
+  },
+  "buttons": {
+    "detail": {
+      "title": "상세"
+    },
+    "show-schedule": {
+      "title": "근무표 보기"
+    }
+  },
+  "filter": {
+    "status": {
+      "title": "상태"
+    }
+  },
+  "list": {
+    "columns": ["구분", "병원명", "주소", "병실 수", "계약여부"]
+  },
+  "modal": {
+    "detail": {"title": "병원 상세"}
+  }
+}
