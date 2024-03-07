@@ -3,7 +3,7 @@ import {isLocalServerErrorType} from '../../utils/type-gards'
 import {apiPath} from '~constants/api-paths'
 import errorMessages from '~constants/errors'
 import {DEFAULT_PAGE_SIZE} from '~constants/pagination'
-import ExternalManagerListResource from '~models/dto/\bexternal-manager/ListResource'
+import ExternalManagerListResource from '~models/dto/_external-manager/ListResource'
 import {ResourceHook} from '~types'
 import {
   IExternalManager,
