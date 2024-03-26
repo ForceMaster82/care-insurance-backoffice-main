@@ -77,6 +77,11 @@ export const profitAllocationRatio: IComboBoxItemData<number>[] = [
   {data: 1, label: '100%'},
 ]
 
+export const renewalTypeOption: IComboBoxItemData<string>[] = [
+  {data: 'THREE_YEAR', label: '3년형'},
+  {data: 'TEN_YEAR', label: '10년형'},
+]
+
 export const bankList: IComboBoxItemData<string>[] = [
   {data: '경남은행', label: '경남은행'},
   {data: '광주은행', label: '광주은행'},

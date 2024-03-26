@@ -10,13 +10,13 @@ import {removeComma} from '~utils/formatter'
 class CoverageCreateInput {
   name: string
   targetSubscriptionYear: number
-  #renewalType: RenewalType
+  renewalType: RenewalType
   dailyCharge: string
 
   constructor() {
     this.name = ''
     this.targetSubscriptionYear = new Date().getFullYear() + 1
-    this.#renewalType = DEFAULT_RENEWAL_TYPE
+    this.renewalType = DEFAULT_RENEWAL_TYPE
     this.dailyCharge = ''
   }
 
@@ -25,14 +25,16 @@ class CoverageCreateInput {
       dailyCharge: this.dailyCharge,
       name: this.name,
       targetSubscriptionYear: this.targetSubscriptionYear,
+      renewalType: this.renewalType,
     }
   }
 
   set data(data: CoverageCreateData) {
-    const {name, targetSubscriptionYear, dailyCharge} = data
+    const {name, targetSubscriptionYear, dailyCharge, renewalType} = data
     this.name = name
     this.targetSubscriptionYear = targetSubscriptionYear
     this.dailyCharge = dailyCharge
+    this.renewalType = renewalType
   }
 
   get input(): ICoverageCreate {
@@ -45,7 +47,7 @@ class CoverageCreateInput {
     return {
       annualCoveredCaregivingCharges,
       name: this.name,
-      renewalType: this.#renewalType,
+      renewalType: this.renewalType,
       targetSubscriptionYear: this.targetSubscriptionYear,
     }
   }

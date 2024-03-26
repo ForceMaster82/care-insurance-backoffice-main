@@ -30,7 +30,7 @@ export interface IAnnualCoveredCaregivingChargeData {
 
 export type CoverageCreateData = Pick<
   CoverageCreateInput,
-  'name' | 'targetSubscriptionYear' | 'dailyCharge'
+  'name' | 'targetSubscriptionYear' | 'dailyCharge' | 'renewalType'
 >
 
 export type CoverageUpdateData = Pick<

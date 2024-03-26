@@ -2,6 +2,9 @@ import {Constraints} from '@caredoc/utils-web'
 import {CoverageCreateData, CoverageUpdateData} from '~types/form'
 
 export const coverageConstraints: Constraints<CoverageCreateData> = {
+  renewalType: {
+    required: {message: '담보유형을 선택해 주세요', value: true},
+  },
   dailyCharge: {
     required: {message: '일일 간병비를 입력해 주세요', value: true},
   },

@@ -9,7 +9,7 @@ import CardRow from '~components/Card/CardRow'
 import FormContainer from '~components/Form/FormContainer'
 import BasicInput from '~components/Input/BasicInput'
 import FormattingInput from '~components/Input/FormattingInput'
-import {coverageTargetSubscriptionYearOptions} from '~constants/options'
+import {coverageTargetSubscriptionYearOptions, renewalTypeOption} from '~constants/options'
 import {COVERAGE_RENEWAL_TYPE, DEFAULT_RENEWAL_TYPE} from '~constants/texts'
 import {coverageConstraints} from '~constraints/coverage'
 import {CoverageCreateData} from '~types/form'
@@ -66,6 +66,12 @@ const CoverageRegisterForm = ({
     ref.current?.requestSubmit()
   }
 
+  const {field: renewalTypeField} = useController({
+    control,
+    name: 'renewalType',
+    rules: coverageConstraints.renewalType,
+  })
+
   const {field: externalCaregivingOrganizationIdField} = useController({
     control,
     name: 'targetSubscriptionYear',
@@ -76,16 +82,25 @@ const CoverageRegisterForm = ({
     <Box gap="sm">
       <FormContainer onSubmit={handleSubmit(onSubmit)} ref={ref}>
         <CardContainer>
-          <InfoBox size="md" state="info">
+          {/*<InfoBox size="md" state="info">
             3년형 가입담보의 일일 간병비 신규 추가는 수정을 통해 진행하셔야
             합니다.
-          </InfoBox>
+          </InfoBox>*/}
           <CardRow>
-            <CardItem title="구분">
+            <CardItem required title="담보유형">
+              <ComboBox
+                  items={renewalTypeOption}
+                  onSelect={(value): void =>
+                      renewalTypeField.onChange(value)
+                  }
+                  value={renewalTypeField.value}
+              />
+            </CardItem>
+            {/*<CardItem title="구분">
               <Typography>
                 {COVERAGE_RENEWAL_TYPE[DEFAULT_RENEWAL_TYPE]}
               </Typography>
-            </CardItem>
+            </CardItem>*/}
             <CardItem required title="가입담보명">
               <BasicInput<CoverageCreateData>
                 constraints={coverageConstraints}
